@@ -53,12 +53,7 @@ header ul.menu > li.search-starter > a {
 header ul.menu > li.basket-starter > a {
   background-image: url('../images/header_bag.svg');
 }
-header ul.menu > li:hover {
-  opacity: 1;
-}
-
-header .basket.show {
-  visibility: visible;
+header ul.menu > li > a:hover {
   opacity: 1;
 }
 
@@ -72,6 +67,13 @@ header .basket {
   position: absolute;
   top: calc(100% + 4px);
   right: -6px;
+  visibility: hidden;
+  transition: 0.4s;
+  opacity: 0;
+}
+header .basket.show {
+  visibility: visible;
+  opacity: 1;
 }
 
 header .basket .arrow {
